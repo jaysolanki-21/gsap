@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px; 
+    border-bottom: 1px solid black;
+}
+
+.links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.links li{
+    font-size: 15px;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+}
+
+
