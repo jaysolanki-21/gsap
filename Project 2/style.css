@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  font-family: sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ri-menu-line,
+.ri-close-line {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  padding-top: 80px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu li {
+  padding: 20px 40px;
+  font-size: 2rem;
+  color: black;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.menu li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#closeMenu {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 101;
+}
